@@ -5,9 +5,6 @@
 
 #include "thirdparty/sqlite3/sqlite3.h"
 
-SQLITE_API void libsql_run_wasm(struct libsql_wasm_udf_api *api, sqlite3_context *context,
-		libsql_wasm_engine_t *engine, libsql_wasm_module_t *module, const char *func_name, int argc, sqlite3_value **argv);
-
 Array mvsqlite_fast_parse_row(sqlite3_stmt *stmt) {
   Array result;
 
